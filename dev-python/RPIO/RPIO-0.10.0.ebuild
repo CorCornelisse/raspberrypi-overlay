@@ -3,6 +3,9 @@
 # $Header: $
 
 EAPI=5
+PYTHON_COMPAT=( python2_7 python3_3 )
+
+inherit distutils-r1
 
 DESCRIPTION="Advanced GPIO for the Raspberry Pi. Extends RPi.GPIO with PWM, GPIO interrups, TCP socket interrupts, command line tools and more"
 HOMEPAGE="http://pythonhosted.org/RPIO/"
