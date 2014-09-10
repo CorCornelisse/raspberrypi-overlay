@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+<repo quality="experimental" status="unofficial">
+        <name>raspberrypi-overlay</name>
+        <description>Gentoo overlay to provide additional packages for use on the raspberrypi</description>
+        <homepage>https://github.com/CorCornelisse/raspberrypi-overlay</homepage>
+        <owner type="project">
+                <email>corcornelisse@gmail.com</email>
+                <name>Cor Cornelisse</name>
+        </owner>
+        <source type="git">https://github.com/CorCornelisse/raspberrypi-overlay.git</source>
+    <feed>https://github.com/CorCornelisse/raspberrypi-overlay/commits/eclass5.atom</feed>
+</repo>
+</repositories>
