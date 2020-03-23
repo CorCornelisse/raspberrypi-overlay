@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit cmake-utils
+
 DESCRIPTION="canonical libwebsockets.org websocket library"
 HOMEPAGE="https://libwebsockets.org/"
 SRC_URI="https://github.com/warmcat/libwebsockets/archive/v${PV}.tar.gz -> ${P}.tar.gz"
