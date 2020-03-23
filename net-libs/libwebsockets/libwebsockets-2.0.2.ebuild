@@ -27,6 +27,10 @@ DEPEND="${RDEPEND}
 	dev-lang/perl
 "
 
+src_unpack() {
+	eapply "${FILESDIR}/${PV}-buf-alloc.patch"
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DLWS_IPV6=$(usex ipv6 ON OFF)

@@ -1,0 +1,11 @@
+--- a/test-server/test-server-http.c	2020-03-23 21:43:49.895312000 +0100
++++ b/test-server/test-server-http.c	2020-03-23 21:44:16.285312000 +0100
+@@ -144,7 +144,7 @@
+ 	struct per_session_data__http *pss1;
+ 	struct lws *wsi1;
+ #endif
+-	char buf[256];
++	char buf[301];
+ 	char b64[64];
+ 	int n, m;
+ #ifdef EXTERNAL_POLL
