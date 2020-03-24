@@ -27,9 +27,9 @@ DEPEND="${RDEPEND}
 	dev-lang/perl
 "
 
-src_unpack() {
-	eapply "${FILESDIR}/${P}-buf-alloc.patch"
-}
+PATCHES=(
+	"${FILESDIR}/${P}-buf-alloc.patch"
+)
 
 src_configure() {
 	local mycmakeargs=(
