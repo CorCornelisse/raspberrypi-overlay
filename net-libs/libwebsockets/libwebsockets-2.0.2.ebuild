@@ -29,6 +29,7 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${P}-buf-alloc.patch"
+	"${FILESDIR}/${P}-ssl.patch"
 )
 
 src_configure() {
