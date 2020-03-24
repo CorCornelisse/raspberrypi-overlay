@@ -9,3 +9,12 @@
  	char b64[64];
  	int n, m;
  #ifdef EXTERNAL_POLL
+@@ -227,7 +227,7 @@
+ #endif
+ 
+ 		if (!strncmp(in, "/postresults", 12)) {
+-			m = sprintf(buf, "<html><body>Form results: '%s'<br>"
++			m = snprintf(buf, sizeof(buf), "<html><body>Form results: '%s'<br>"
+ 					"</body></html>", pss->post_string);
+ 
+ 			p = buffer + LWS_PRE;
