@@ -28,7 +28,7 @@ DEPEND="${RDEPEND}
 "
 
 src_unpack() {
-	eapply "${FILESDIR}/${PV}-buf-alloc.patch"
+	eapply "${FILESDIR}/${P}-buf-alloc.patch"
 }
 
 src_configure() {
