@@ -1,0 +1,11 @@
+--- a/lib/server.c	2020-03-26 13:10:08.732312000 +0100
++++ b/lib/server.c	2020-03-26 13:13:28.559312000 +0100
+@@ -261,7 +261,7 @@
+ #ifndef _WIN32_WCE
+ 	struct stat st;
+ #endif
+-	char path[256], sym[256];
++	char path[256], sym[257];
+ 	unsigned char *p = (unsigned char *)sym + 32 + LWS_PRE, *start = p;
+ 	unsigned char *end = p + sizeof(sym) - 32 - LWS_PRE;
+ #if !defined(WIN32)
